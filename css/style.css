@@ -58,18 +58,24 @@ ul, li {
   border: 2px dotted #fff;
   background: #04574e;
 }
-.about {
+.about, .services {
   padding-top: 120px;
   padding-bottom: 125px;
   background: #fff;
   color: #000;
   text-align: center;
 }
-.about__title {
+.services {
+  background: #e4fdf9;
+  padding-top: 165px;
+}
+.about__title,
+.services__title {
   font-size: 30px;
   font-weight: bold;
 }
-.about__text {
+.about__text,
+.services__text {
   color: #212121;
   font-size: 15px;
   margin-bottom: 110px;
@@ -79,4 +85,37 @@ ul, li {
   margin-bottom: 20px;
   font-family: 'Open Sans Semibold', sans-serif;
   font-size: 20px;
+}
+.our_card {
+  background: #fff;
+  padding: 50px 40px 40px;
+  transition: .3s;
+  margin-bottom: 30px;
+}
+.our_card:hover {
+  background: #00897b;
+  color: #fff;
+  box-shadow: 0 10px 12px -3px rgba(0, 0, 0, .26);
+  cursor: pointer;
+}
+.our_card:hover .button_services {
+  color: #fff;
+  border: 2px #fff solid;
+}
+.our_card:hover .icon {
+  color: #fff;
+}
+.icon {
+  transition: .3s;
+  font-size: 60px;
+  color: #000;
+}
+.button_services {
+  transition: .3s;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px #212121 solid;
+  padding: 14px 12px;
+  color: #212121;
+  font-family: 'Open Sans Semibold', sans-serif;
 }
