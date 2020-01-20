@@ -1,33 +1,16 @@
 $(document).ready(function () {
-  $('.button[data-filter="wd"]').click(function () {
+  $('.button[data-filter]').click(function () {
     if ($(this).attr('val') === 'off') {
-      $('.button[data-filter]').attr('val', 'off');
-      $(this).attr('val', 'on');
+      $('.button[data-filter]').attr('val', 'off').removeClass('focused');
+      $(this).attr('val', 'on').addClass('focused');
       $('.filter > div').hide(300);
-      $('.filter > div[data-filter="wd"]').show(300);
-    }
-  });
-  $('.button[data-filter="ud"]').click(function () {
-    if ($(this).attr('val') === 'off') {
-      $('.button[data-filter]').attr('val', 'off');
-      $(this).attr('val', 'on');
-      $('.filter > div').hide(300);
-      $('.filter > div[data-filter="ud"]').show(300);
-    }
-  });
-  $('.button[data-filter="moc"]').click(function () {
-    if ($(this).attr('val') === 'off') {
-      $('.button[data-filter]').attr('val', 'off');
-      $(this).attr('val', 'on');
-      $('.filter > div').hide(300);
-      $('.filter > div[data-filter="moc"]').show(300);
-    }
-  });
-  $('.button[data-filter="all"]').click(function () {
-    if ($(this).attr('val') === 'off') {
-      $('.button[data-filter]').attr('val', 'off');
-      $(this).attr('val', 'on');
-      $('.filter > div').show(300);
+      $('.filter > div[data-filter=' + $(this).attr('data-filter') + ']').show(300);
+      //
+      if ($(this).attr('data-filter') === 'all') {
+        $('.button[data-filter]').attr('val', 'off').removeClass('focused');
+        $(this).attr('val', 'on').addClass('focused');
+        $('.filter > div').show(300);
+      }
     }
   });
 });
