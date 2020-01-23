@@ -268,3 +268,49 @@ div[data-filter]:hover .text {
 .dots-style li[class='slick-active'] button {
   background: #3949ab;
 }
+.left > div:first-child {
+  order: 1;
+}
+.left > div:last-child {
+  order: 2;
+}
+.right > div:first-child {
+  order: 2;
+}
+.right > div:last-child {
+  order: 1;
+}
+.blog {
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.blog a {
+  font-size: 20px;
+  color: #00897b;
+  font-family: 'Open Sans Semibold', sans-serif;
+}
+.blog span {
+  font-size: 17px;
+  font-family: 'Open Sans Semibold', sans-serif;
+  margin-right: 35px;
+}
+.blog i {
+  margin-right: 15px;
+}
+.blog div {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.blog p {
+  font-size: 15px;
+}
+.left, .right {
+  margin: 0 -40px;
+}
+.button_blog {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 125px;
+  font-family: 'Roboto', sans-serif;
+}
